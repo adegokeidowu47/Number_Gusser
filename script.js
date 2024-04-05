@@ -8,8 +8,8 @@ const input = document.querySelector('.number'),
 
 const COLOR_GREEN = 'lightgreen';
 const COLOR_ORANGE = '#ffff00c9';
-    
-
+  
+  
 const guessNumber = [0,1,2,3,4,5,6,7,8,9];
 
 let count = 5;
@@ -31,6 +31,7 @@ function myCount(){
       return;
     }
   }
+  
   function tryItAgain(){
     if (input.value > randomNumber) {
       msg.innerHTML = `<p class="answer">You guess too high. Answer: ${randomNumber}</p>`;
